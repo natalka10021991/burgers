@@ -1,0 +1,58 @@
+.feedback-section {
+  display: flex;
+}
+
+.feedback__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.feedback__item {
+  width: 25%;
+  position: relative;
+
+  &:hover {
+    .feedback__back {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+}
+
+.feedback__front {
+  img {
+    object-fit: cover;
+    width: 100%;
+
+  }
+}
+
+.feedback__back {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(20, 20, 20, 0.7);
+  color: $white;
+  padding: 20px;
+
+  p {
+    font-family: Ubuntu-Light;
+    line-height: 1.5rem;
+    font-size: 0.875rem;
+
+  }
+}
+
+.feedback__heading {
+  font-family: Gagalin-Regular;
+  font-size: 0.875rem;
+}
+
+

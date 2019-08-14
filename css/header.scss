@@ -50,10 +50,20 @@
   border: none;
   border-radius: 5px;
   color: $white;
+  font-size: 0.8125rem;
   text-transform: uppercase;
   text-decoration: none;
 
   &:hover, &:focus {
     background-color: $dark-red;
+    cursor: pointer;
+  }
+}
+
+.btn_black {
+  background-color: $black;
+
+  &:hover, &:focus {
+    background-color: $dark-black;
   }
 }
