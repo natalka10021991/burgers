@@ -1,0 +1,56 @@
+.header {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.8125rem;
+}
+
+.header__right {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+
+}
+
+.menu {
+  margin-right: 15px;
+}
+
+.menu__item {
+  @extend %inline-list
+}
+
+.menu__link {
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: $white;
+    margin: 0 15px 4px 15px;
+  }
+
+  &:last-child {
+    &:after {
+
+    }
+  }
+}
+
+.btn {
+  width: 97px;
+  height: 35px;
+  background-color: $red;
+  border: none;
+  border-radius: 5px;
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
