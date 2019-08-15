@@ -24,6 +24,11 @@
   width: 33%;
   display: flex;
   flex-direction: column;
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .advantages-block__heading {
@@ -35,7 +40,7 @@
 .advantages-block__text {
   opacity: 0.8;
   color: $black;
-  font-family: Ubuntu-Medium;
+  font-family: Ubuntu-Light;
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 24.07px;

@@ -19,12 +19,6 @@
 
 .menu__item {
   @extend %inline-list;
-}
-
-.menu__link {
-  color: $white;
-  text-decoration: none;
-  text-transform: uppercase;
 
   &:after {
     content: "";
@@ -38,32 +32,14 @@
 
   &:last-child {
     &:after {
-
+      display: none;
     }
   }
 }
 
-.btn {
-  width: 97px;
-  height: 35px;
-  background-color: $red;
-  border: none;
-  border-radius: 5px;
+.menu__link {
   color: $white;
-  font-size: 0.8125rem;
-  text-transform: uppercase;
   text-decoration: none;
-
-  &:hover, &:focus {
-    background-color: $dark-red;
-    cursor: pointer;
-  }
+  text-transform: uppercase;
 }
 
-.btn_black {
-  background-color: $black;
-
-  &:hover, &:focus {
-    background-color: $dark-black;
-  }
-}

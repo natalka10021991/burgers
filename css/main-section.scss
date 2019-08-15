@@ -16,13 +16,15 @@
 }
 
 .pages-switcher {
-  position: absolute;
-  top: -70px;
-  right: -45px;
+  position: fixed;
+  top: 100px;
+  right: 200px;
+  z-index: 1;
 }
 
 .pages-switcher__list {
   list-style-type: none;
+  padding: 0;
 }
 
 .pages-switcher__item {
@@ -35,8 +37,8 @@
   height: 6px;
   border-radius: 3px;
   background-color: $white;
-  margin-left: 5px;
-  margin-bottom: 3px;
+  margin-left: 4px;
+  margin-bottom: 5px;
 }
 
 .pages-switcher__item_active {
@@ -54,10 +56,6 @@
 
 .intro-slide__left {
   margin-right: 15px;
-}
-
-.intro-slide__container {
-  background: url("../img/drops.svg") no-repeat;
 }
 
 .heading1 {
@@ -87,5 +85,4 @@
 
 .arrow-down {
   text-align: center;
-
 }
