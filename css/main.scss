@@ -1,18 +1,10 @@
 @import 'colors';
-@import 'placeholders';
 @import 'fonts';
 @import 'buttons';
+@import 'base';
+@import 'pages-switcher';
 @import 'header';
 @import 'main-section';
 @import 'advantages-section';
 @import 'feedback-section';
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  width: 100%;
-  height: 100%;
-  font-family: Ubuntu-Regular;
-}

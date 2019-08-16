@@ -1,240 +1,55 @@
-.menu__item {
-  display: inline;
-  list-style-type: none;
-  padding: 0; }
+/*
+Error: File to import not found or unreadable: base.
+       Load path: /Users/shishkin/Desktop/loftschool/burgers/prod/css
+        on line 4 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/main.scss
 
-@font-face {
-  font-family: 'Gagalin-Regular';
-  src: url("../fonts/Gagalin/Gagalin-Regular.otf"); }
-@font-face {
-  font-family: 'Ubuntu-B';
-  src: url("../fonts/Ubuntu/Ubuntu-B.ttf"); }
-@font-face {
-  font-family: 'Ubuntu-Light';
-  src: url("../fonts/Ubuntu/Ubuntu-Light.ttf"); }
-@font-face {
-  font-family: 'Ubuntu-Medium';
-  src: url("../fonts/Ubuntu/Ubuntu-Medium.ttf"); }
-@font-face {
-  font-family: 'Ubuntu-Regular';
-  src: url("../fonts/Ubuntu/Ubuntu-Regular.ttf"); }
-@font-face {
-  font-family: 'Lifehack';
-  src: url("../fonts/Lifehack Medium.otf"); }
-.btn {
-  width: 97px;
-  height: 35px;
-  background-color: #e45028;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 0.8125rem;
-  text-transform: uppercase;
-  text-decoration: none; }
-  .btn:hover, .btn:focus {
-    background-color: #c1401e;
-    cursor: pointer; }
+1: @import 'colors';
+2: @import 'fonts';
+3: @import 'buttons';
+4: @import 'base';
+5: @import 'pages-switcher';
+6: @import 'header';
+7: @import 'main-section';
+8: @import 'advantages-section';
+9: @import 'feedback-section';
 
-.btn_black {
-  background-color: #2f3234; }
-  .btn_black:hover, .btn_black:focus {
-    background-color: #1f2122; }
-
-.header {
-  width: 960px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: 0.8125rem; }
-
-.header__right {
-  display: flex;
-  flex-direction: row;
-  margin-top: 15px; }
-
-.menu {
-  margin-right: 15px; }
-
-.menu__item:after {
-  content: "";
-  display: inline-block;
-  width: 3px;
-  height: 3px;
-  border-radius: 3px;
-  background-color: #fff;
-  margin: 0 15px 4px 15px; }
-.menu__item:last-child:after {
-  display: none; }
-
-.menu__link {
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase; }
-
-.main-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  background: url("../img/main-bg.svg") no-repeat;
-  background-size: 100%;
-  height: 100vh;
-  position: relative; }
-
-.container {
-  width: 960px;
-  padding: 0 15px;
-  margin: 0 auto;
-  position: relative; }
-
-.pages-switcher {
-  position: fixed;
-  top: 100px;
-  right: 200px;
-  z-index: 1; }
-
-.pages-switcher__list {
-  list-style-type: none;
-  padding: 0; }
-
-.pages-switcher__item {
-  margin-bottom: 3px; }
-
-.pages-switcher__link {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  border-radius: 3px;
-  background-color: #fff;
-  margin-left: 4px;
-  margin-bottom: 5px; }
-
-.pages-switcher__item_active {
-  width: 16px;
-  height: 16px;
-  border: 1px solid #fff;
-  border-radius: 8px; }
-
-.intro-slide {
-  display: flex;
-  flex-direction: row;
-  align-items: center; }
-
-.intro-slide__left {
-  margin-right: 15px; }
-
-.heading1 {
-  color: #f9b43b;
-  font-size: 4.5rem;
-  font-family: Gagalin-Regular;
-  line-height: 2;
-  margin: 0; }
-
-.heading1_black {
-  color: #2f3234; }
-
-.heading1__subheading {
-  display: block;
-  color: #fff;
-  font-size: 4.0625rem;
-  font-family: Lifehack;
-  line-height: 0.9; }
-
-.intro-slide__img {
-  margin-top: -70px;
-  margin-left: 30px; }
-
-.arrow-down {
-  text-align: center; }
-
-.about-section {
-  height: 100vh;
-  position: relative;
-  background: url("../img/about.svg") no-repeat;
-  background-size: 100%; }
-
-.about-section__container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-
-.advantages__list {
-  display: flex;
-  text-align: center;
-  list-style-type: none;
-  padding: 0; }
-
-.advantages__item {
-  width: 33%;
-  display: flex;
-  flex-direction: column;
-  margin-right: 15px; }
-  .advantages__item:last-child {
-    margin-right: 0; }
-
-.advantages-block__heading {
-  font-family: Lifehack;
-  font-size: 1.5rem;
-  color: #2f3234; }
-
-.advantages-block__text {
-  opacity: 0.8;
-  color: #2f3234;
-  font-family: Ubuntu-Light;
-  font-size: 0.875rem;
-  font-weight: 300;
-  line-height: 24.07px; }
-
-.feedback-section {
-  display: flex; }
-
-.feedback__list {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  list-style-type: none;
-  margin: 0; }
-
-.feedback__item {
-  width: 25%;
-  position: relative; }
-  .feedback__item:hover .feedback__back {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    cursor: pointer; }
-
-.feedback__front img {
-  display: block;
-  object-fit: cover;
-  width: 100%; }
-
-.feedback__back {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(20, 20, 20, 0.7);
-  color: #fff;
-  padding: 20px; }
-  .feedback__back p {
-    font-family: Ubuntu-Light;
-    line-height: 1.5rem;
-    font-size: 0.875rem; }
-
-.feedback__heading {
-  font-family: Gagalin-Regular;
-  font-size: 0.875rem; }
-
-* {
-  box-sizing: border-box; }
-
-body {
-  width: 100%;
-  height: 100%;
-  font-family: Ubuntu-Regular; }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+/Users/shishkin/Desktop/loftschool/burgers/prod/css/main.scss:4
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:44:in `import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: base.\A        Load path: /Users/shishkin/Desktop/loftschool/burgers/prod/css\A         on line 4 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/main.scss\A \A 1: @import 'colors';\A 2: @import 'fonts';\A 3: @import 'buttons';\A 4: @import 'base';\A 5: @import 'pages-switcher';\A 6: @import 'header';\A 7: @import 'main-section';\A 8: @import 'advantages-section';\A 9: @import 'feedback-section';"; }

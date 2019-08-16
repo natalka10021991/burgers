@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$white".
-        on line 42 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/feedback-section.scss
+        on line 39 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/feedback-section.scss
 
-37:   display: none;
-38:   position: absolute;
-39:   top: 0;
-40:   left: 0;
-41:   background-color: rgba(20, 20, 20, 0.7);
-42:   color: $white;
-43:   padding: 20px;
-44: 
-45:   p {
-46:     font-family: Ubuntu-Light;
-47:     line-height: 1.5rem;
+34:   top: 0;
+35:   left: 0;
+36:   right: 0;
+37:   bottom: 0;
+38:   background-color: rgba(20, 20, 20, 0.7);
+39:   color: $white;
+40:   padding: 50px 20px;
+41: }
+42: 
+43: .feedback__heading {
+44:   font-family: Gagalin-Regular;
 
 Backtrace:
-/Users/shishkin/Desktop/loftschool/burgers/prod/css/feedback-section.scss:42
+/Users/shishkin/Desktop/loftschool/burgers/prod/css/feedback-section.scss:39
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -62,4 +62,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 42 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/feedback-section.scss\A \A 37:   display: none;\A 38:   position: absolute;\A 39:   top: 0;\A 40:   left: 0;\A 41:   background-color: rgba(20, 20, 20, 0.7);\A 42:   color: $white;\A 43:   padding: 20px;\A 44: \A 45:   p {\A 46:     font-family: Ubuntu-Light;\A 47:     line-height: 1.5rem;"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 39 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/feedback-section.scss\A \A 34:   top: 0;\A 35:   left: 0;\A 36:   right: 0;\A 37:   bottom: 0;\A 38:   background-color: rgba(20, 20, 20, 0.7);\A 39:   color: $white;\A 40:   padding: 50px 20px;\A 41: }\A 42: \A 43: .feedback__heading {\A 44:   font-family: Gagalin-Regular;"; }

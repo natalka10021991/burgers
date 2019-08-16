@@ -1,6 +1,5 @@
 .btn {
-  width: 97px;
-  height: 35px;
+  padding: 10px 20px;
   background-color: $red;
   border: none;
   border-radius: 5px;
@@ -8,6 +7,7 @@
   font-size: 0.8125rem;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
 
   &:hover, &:focus {
     background-color: $dark-red;

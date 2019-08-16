@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$white".
-        on line 29 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/header.scss
+        on line 33 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/header.scss
 
-24:     content: "";
-25:     display: inline-block;
-26:     width: 3px;
-27:     height: 3px;
-28:     border-radius: 3px;
-29:     background-color: $white;
-30:     margin: 0 15px 4px 15px;
-31:   }
-32: 
-33:   &:last-child {
-34:     &:after {
+28:     content: "";
+29:     display: inline-block;
+30:     width: 3px;
+31:     height: 3px;
+32:     border-radius: 3px;
+33:     background-color: $white;
+34:     margin: 0 15px 4px 15px;
+35:   }
+36: 
+37:   &:last-child {
+38:     &:after {
 
 Backtrace:
-/Users/shishkin/Desktop/loftschool/burgers/prod/css/header.scss:29
+/Users/shishkin/Desktop/loftschool/burgers/prod/css/header.scss:33
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -73,4 +73,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 29 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/header.scss\A \A 24:     content: \"\";\A 25:     display: inline-block;\A 26:     width: 3px;\A 27:     height: 3px;\A 28:     border-radius: 3px;\A 29:     background-color: $white;\A 30:     margin: 0 15px 4px 15px;\A 31:   }\A 32: \A 33:   &:last-child {\A 34:     &:after {"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 33 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/header.scss\A \A 28:     content: \"\";\A 29:     display: inline-block;\A 30:     width: 3px;\A 31:     height: 3px;\A 32:     border-radius: 3px;\A 33:     background-color: $white;\A 34:     margin: 0 15px 4px 15px;\A 35:   }\A 36: \A 37:   &:last-child {\A 38:     &:after {"; }

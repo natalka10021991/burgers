@@ -1,0 +1,43 @@
+.pages-switcher {
+  position: fixed;
+  top: 100px;
+  right: 200px;
+  z-index: 1;
+}
+
+.pages-switcher__item {
+  margin-bottom: 3px;
+}
+
+.pages-switcher__link {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  margin-left: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: $white;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+  }
+
+  &:hover {
+    border: 1px solid $white;
+  }
+}
+
+.pages-switcher__item_active {
+
+  .pages-switcher__link {
+    border: 1px solid $white;
+  }
+}

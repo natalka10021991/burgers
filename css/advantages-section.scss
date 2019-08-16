@@ -1,11 +1,8 @@
-.about-section {
-  height: 100vh;
-  position: relative;
+.section_about {
   background: url("../img/about.svg") no-repeat;
-  background-size: 100%;
 }
 
-.about-section__container {
+.about__container {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -13,11 +10,9 @@
   justify-content: center;
 }
 
-.advantages__list {
+.advantages {
   display: flex;
   text-align: center;
-  list-style-type: none;
-  padding: 0;
 }
 
 .advantages__item {
@@ -31,13 +26,13 @@
   }
 }
 
-.advantages-block__heading {
+.advantages__heading {
   font-family: Lifehack;
   font-size: 1.5rem;
   color: $black;
 }
 
-.advantages-block__text {
+.advantages__text {
   opacity: 0.8;
   color: $black;
   font-family: Ubuntu-Light;
