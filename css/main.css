@@ -186,10 +186,14 @@
   .advantages__item:last-child {
     margin-right: 0; }
 
+.advantages__img {
+  margin-bottom: 30px; }
+
 .advantages__heading {
   font-family: Lifehack;
   font-size: 1.5rem;
-  color: #2f3234; }
+  color: #2f3234;
+  margin-bottom: 30px; }
 
 .advantages__text {
   opacity: 0.8;
