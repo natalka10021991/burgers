@@ -5,26 +5,22 @@
 .feedback {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .feedback__item {
   width: 25%;
+  height: 50%;
   position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &:hover {
     .feedback__back {
       opacity: 1;
       cursor: pointer;
     }
-  }
-}
-
-.feedback__front {
-  img {
-    display: block;
-    object-fit: cover;
-    width: 100%;
-    filter: grayscale(1);
   }
 }
 
