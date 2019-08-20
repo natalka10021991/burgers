@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$black".
-        on line 36 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/advantages-section.scss
+        on line 36 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/section_about.scss
 
 31: }
 32: 
@@ -15,7 +15,7 @@ Error: Undefined variable: "$black".
 41:   opacity: 0.8;
 
 Backtrace:
-/Users/shishkin/Desktop/loftschool/burgers/prod/css/advantages-section.scss:36
+/Users/shishkin/Desktop/loftschool/burgers/prod/css/section_about.scss:36
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -48,10 +48,9 @@ Backtrace:
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:20:in `render'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:290:in `render'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:400:in `run'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
@@ -62,4 +61,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$black\".\A         on line 36 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/advantages-section.scss\A \A 31: }\A 32: \A 33: .advantages__heading {\A 34:   font-family: Lifehack;\A 35:   font-size: 1.5rem;\A 36:   color: $black;\A 37:   margin-bottom: 30px;\A 38: }\A 39: \A 40: .advantages__text {\A 41:   opacity: 0.8;"; }
+  content: "Error: Undefined variable: \"$black\".\A         on line 36 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/section_about.scss\A \A 31: }\A 32: \A 33: .advantages__heading {\A 34:   font-family: Lifehack;\A 35:   font-size: 1.5rem;\A 36:   color: $black;\A 37:   margin-bottom: 30px;\A 38: }\A 39: \A 40: .advantages__text {\A 41:   opacity: 0.8;"; }

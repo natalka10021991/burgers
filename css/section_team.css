@@ -1,18 +1,21 @@
 /*
-Error: Undefined variable: "$red".
-        on line 3 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/buttons.scss
+Error: Undefined variable: "$white".
+        on line 20 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/section_team.scss
 
-1: .btn {
-2:   padding: 10px 20px;
-3:   background-color: $red;
-4:   border: none;
-5:   border-radius: 5px;
-6:   color: $white;
-7:   font-size: 0.8125rem;
-8:   text-transform: uppercase;
+15:   background-color: #2f3234;
+16:   opacity: 0.93;
+17: }
+18: 
+19: .team__item {
+20:   color: $white;
+21:   font-size: 14px;
+22:   margin-bottom: 35px;
+23: 
+24:   &_active {
+25: 
 
 Backtrace:
-/Users/shishkin/Desktop/loftschool/burgers/prod/css/buttons.scss:3
+/Users/shishkin/Desktop/loftschool/burgers/prod/css/section_team.scss:20
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -58,4 +61,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$red\".\A         on line 3 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/buttons.scss\A \A 1: .btn {\A 2:   padding: 10px 20px;\A 3:   background-color: $red;\A 4:   border: none;\A 5:   border-radius: 5px;\A 6:   color: $white;\A 7:   font-size: 0.8125rem;\A 8:   text-transform: uppercase;"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 20 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/section_team.scss\A \A 15:   background-color: #2f3234;\A 16:   opacity: 0.93;\A 17: }\A 18: \A 19: .team__item {\A 20:   color: $white;\A 21:   font-size: 14px;\A 22:   margin-bottom: 35px;\A 23: \A 24:   &_active {\A 25: "; }

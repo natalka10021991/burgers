@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$white".
-        on line 39 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/feedback-section.scss
+        on line 35 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/section_feedback.scss
 
-34:   top: 0;
-35:   left: 0;
-36:   right: 0;
-37:   bottom: 0;
-38:   background-color: rgba(20, 20, 20, 0.7);
-39:   color: $white;
-40:   padding: 50px 20px;
-41: }
-42: 
-43: .feedback__heading {
-44:   font-family: Gagalin-Regular;
+30:   top: 0;
+31:   left: 0;
+32:   right: 0;
+33:   bottom: 0;
+34:   background-color: rgba(20, 20, 20, 0.7);
+35:   color: $white;
+36:   padding: 50px 20px;
+37: }
+38: 
+39: .feedback__heading {
+40:   font-family: Gagalin-Regular;
 
 Backtrace:
-/Users/shishkin/Desktop/loftschool/burgers/prod/css/feedback-section.scss:39
+/Users/shishkin/Desktop/loftschool/burgers/prod/css/section_feedback.scss:35
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -48,10 +48,9 @@ Backtrace:
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:20:in `render'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:290:in `render'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:400:in `run'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
@@ -62,4 +61,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 39 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/feedback-section.scss\A \A 34:   top: 0;\A 35:   left: 0;\A 36:   right: 0;\A 37:   bottom: 0;\A 38:   background-color: rgba(20, 20, 20, 0.7);\A 39:   color: $white;\A 40:   padding: 50px 20px;\A 41: }\A 42: \A 43: .feedback__heading {\A 44:   font-family: Gagalin-Regular;"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 35 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/section_feedback.scss\A \A 30:   top: 0;\A 31:   left: 0;\A 32:   right: 0;\A 33:   bottom: 0;\A 34:   background-color: rgba(20, 20, 20, 0.7);\A 35:   color: $white;\A 36:   padding: 50px 20px;\A 37: }\A 38: \A 39: .feedback__heading {\A 40:   font-family: Gagalin-Regular;"; }

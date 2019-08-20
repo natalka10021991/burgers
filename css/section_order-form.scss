@@ -1,0 +1,25 @@
+.section_order-form {
+  background: url("../img/form-bg.svg");
+}
+
+.form {
+  display: flex;
+  color: $white;
+}
+
+.form__column {
+  width: 50%;
+}
+
+.form__row {
+  display: flex;
+}
+
+.form__block {
+  flex: 1;
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
