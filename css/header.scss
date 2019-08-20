@@ -17,11 +17,11 @@
   align-items: center;
 }
 
-.menu {
+.nav {
   margin-right: 15px;
 }
 
-.menu__item {
+.nav__item {
   display: inline-block;
 
   &:after {
@@ -41,7 +41,7 @@
   }
 }
 
-.menu__link {
+.nav__link {
   color: $white;
   text-decoration: none;
   text-transform: uppercase;
