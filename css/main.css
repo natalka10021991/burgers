@@ -40,12 +40,88 @@
   text-align: center; }
   .btn:hover, .btn:focus {
     background-color: #c1401e;
-    cursor: pointer; }
+    cursor: pointer;
+    outline: none; }
 
 .btn_black {
   background-color: #2f3234; }
   .btn_black:hover, .btn_black:focus {
     background-color: #1f2122; }
+
+.btn_reset {
+  background: none;
+  text-transform: initial;
+  font-family: 'Ubuntu-Light'; }
+  .btn_reset:hover, .btn_reset:focus, .btn_reset:active {
+    background: none;
+    border: none;
+    outline: none; }
+
+.radio-group {
+  display: flex; }
+
+.radio {
+  margin-right: 25px; }
+  .radio:last-child {
+    margin-right: 0; }
+
+.radio__content {
+  display: flex; }
+
+.radio__input {
+  position: absolute;
+  opacity: 0; }
+  .radio__input:checked + .radio__content .radio__btn:after {
+    opacity: 1; }
+
+.radio__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 10px; }
+  .radio__btn:after {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #e45028;
+    opacity: 0;
+    transition: 0.3s; }
+
+.checkbox {
+  display: flex; }
+
+.checkbox__input {
+  position: absolute;
+  opacity: 0;
+  margin-right: 10px; }
+  .checkbox__input:checked + .checkbox__content .checkbox__btn:after {
+    opacity: 1; }
+
+.checkbox__content {
+  display: flex; }
+
+.checkbox__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  margin-right: 10px; }
+  .checkbox__btn:after {
+    content: '';
+    display: block;
+    width: 11px;
+    height: 9px;
+    color: #e45028;
+    background: url("../img/icons/checkbox-checked.svg") center center no-repeat;
+    opacity: 0; }
 
 .pages-switcher {
   position: fixed;
@@ -379,28 +455,123 @@
 
 .form {
   display: flex;
-  color: #fff; }
+  color: #fff;
+  font-size: 14px; }
 
 .form__column {
-  width: 50%; }
+  flex: 1;
+  margin-right: 20px; }
+  .form__column:last-child {
+    margin-right: 0; }
 
 .form__row {
-  display: flex; }
+  display: flex;
+  margin-bottom: 20px; }
 
 .form__block {
+  display: block;
   flex: 1;
   margin-right: 20px; }
   .form__block:last-child {
     margin-right: 0; }
 
+.form__block-title {
+  margin-bottom: 7px;
+  font-family: 'Ubuntu-Light'; }
+
+.form__block-input {
+  background: #fff;
+  padding: 8px 20px;
+  border: 1px solid #d1cfcb;
+  border-radius: 3px;
+  width: 100%;
+  color: #2f3234; }
+  .form__block-input:active, .form__block-input:focus {
+    padding: 7px 20px;
+    border: 2px solid #f9b43b;
+    outline: none; }
+
+.form__block-input_textarea {
+  resize: none;
+  height: 110px; }
+  .form__block-input_textarea:focus {
+    outline: none; }
+
+.section_contacts {
+  background-image: url("../img/map-bg.jpg"); }
+
+.footer {
+  background-color: #2f3234;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.container_footer {
+  display: flex;
+  flex-direction: row; }
+
+.contacts {
+  font-size: 14px; }
+
+.address {
+  font-family: 'Ubuntu-Light';
+  color: #fff;
+  margin-bottom: 10px; }
+
+.phone {
+  font-family: 'Ubuntu-B';
+  color: #e45028; }
+  .phone:before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: url("../img/icons/phone.svg") center center no-repeat;
+    margin-right: 10px; }
+
+.socials__list {
+  display: flex; }
+
+.socials__item {
+  margin-right: 20px; }
+  .socials__item:last-child {
+    margin-right: 0; }
+
+.socials__link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  opacity: 0.3; }
+  .socials__link:hover {
+    opacity: 1; }
+
+.socials_vk {
+  background: url("../img/icons/vk.svg") center center no-repeat;
+  background-size: contain; }
+
+.socials_fb {
+  background: url("../img/icons/fb.svg") center center no-repeat;
+  background-size: contain; }
+
+.socials_inst {
+  background: url("../img/icons/inst.svg") center center no-repeat;
+  background-size: contain; }
+
+.socials_twitter {
+  background: url("../img/icons/twitter.svg") center center no-repeat;
+  background-size: contain; }
+
 * {
   box-sizing: border-box; }
+
+html {
+  font-size: 16px; }
 
 body {
   width: 100%;
   height: 100%;
-  font-family: Ubuntu-Regular;
-  font-size: 16px; }
+  font-family: Ubuntu-Regular; }
 
 p {
   margin: 0;

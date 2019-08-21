@@ -1,0 +1,72 @@
+.section_contacts {
+  background-image: url('../img/map-bg.jpg');
+}
+
+.footer {
+  background-color: $black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.container_footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.contacts {
+  font-size: 14px;
+}
+
+.address {
+  font-family: 'Ubuntu-Light';
+  color: $white;
+  margin-bottom: 10px;
+}
+
+.phone {
+  font-family: 'Ubuntu-B';
+  color: $red;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: url("../img/icons/phone.svg") center center no-repeat;
+    margin-right: 10px;
+  }
+}
+
+.socials__list {
+  display: flex;
+}
+
+.socials__item {
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.socials__link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@each $social in(vk, fb, inst, twitter) {
+  .socials_#{$social} {
+    background: url("../img/icons/#{$social}.svg") center center no-repeat;
+    background-size: contain;
+  }
+}
+
+

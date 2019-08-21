@@ -12,6 +12,7 @@
   &:hover, &:focus {
     background-color: $dark-red;
     cursor: pointer;
+    outline: none;
   }
 }
 
@@ -20,5 +21,17 @@
 
   &:hover, &:focus {
     background-color: $dark-black;
+  }
+}
+
+.btn_reset {
+  background: none;
+  text-transform: initial;
+  font-family: 'Ubuntu-Light';
+
+  &:hover, &:focus, &:active {
+    background: none;
+    border: none;
+    outline: none;
   }
 }
