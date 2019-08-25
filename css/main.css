@@ -247,6 +247,9 @@
   @media screen and (max-width: 768px) {
     .intro-slide__left {
       margin-right: 0; } }
+  @media screen and (max-width: 480px) {
+    .intro-slide__left {
+      margin-bottom: 20px; } }
 
 .intro-slide__img {
   max-width: 100%;
@@ -271,7 +274,7 @@
       text-align: center; } }
   @media screen and (max-width: 480px) {
     .heading {
-      font-size: 3.9375rem; } }
+      font-size: 3.625rem; } }
 
 @media screen and (max-width: 480px) {
   .heading_h2 {

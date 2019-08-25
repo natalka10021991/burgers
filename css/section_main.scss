@@ -36,6 +36,10 @@
   @include tablets {
     margin-right: 0;
   }
+
+  @include phones {
+    margin-bottom: 20px;
+  }
 }
 
 .intro-slide__img {
@@ -66,7 +70,7 @@
   }
 
   @include phones {
-    font-size: rem(63px);
+    font-size: rem(58px);
   }
 }
 
