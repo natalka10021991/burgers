@@ -2,6 +2,11 @@
   background-image: url("../img/menu-bg.png");
 }
 
+.container_menu {
+  width: 100%;
+  align-items: flex-start;
+}
+
 .menu {
   display: flex;
   position: absolute;
@@ -19,30 +24,33 @@
 .menu__item {
   display: flex;
 
-  &:hover {
-
-    .menu__elem-desc {
-      max-width: 500px;
-    }
-  }
-
   &_active {
     .menu__elem-desc {
-      max-width: 500px;
+      max-width: rem(500px);
+
+      @include tablets {
+        width: rem(300px);
+      }
     }
   }
 
+}
+
 .menu__elem-btn {
-  width: 85px;
+  width: rem(85px);
   flex: 0 0 auto;
   color: $white;
   font-family: "Gagalin-Regular";
-  font-size: 40px;
+  font-size: rem(40px);
   position: relative;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @include phones {
+    width: rem(70px);
   }
+
 }
 
 .menu__elem-title {
@@ -52,22 +60,22 @@
   left: 50%;
   transform-origin: 0 0;
   white-space: nowrap;
-  margin-top: -20px;
+  margin-top: rem(-20px);
 }
 
 .menu__elem-desc {
   overflow: hidden;
   background-color: #2f3234;
   opacity: 0.5;
-  font-size: 14px;
+  font-size: rem(14px);
   font-family: 'Ubuntu-Light';
   line-height: 24px;
-  overflow: hidden;
   max-width: 0;
   transition: 1s;
 }
 
 .menu__elem-text {
-  padding: 60px 30px;
-  width: 500px;
+  padding: rem(60px) rem(30px);
+  max-width: rem(500px);
+  width: 100%;
 }

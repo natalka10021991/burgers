@@ -8,11 +8,11 @@ Error: Undefined variable: "$white".
 5: .form {
 6:   display: flex;
 7:   color: $white;
-8:   font-size: 14px;
-9: }
-10: 
-11: .form__column {
-12:   flex: 1;
+8:   font-size: rem(14px);
+9: 
+10:   @include tablets {
+11:     flex-direction: column;
+12:     padding: 0 15%;
 
 Backtrace:
 /Users/shishkin/Desktop/loftschool/burgers/prod/css/section_order-form.scss:7
@@ -61,4 +61,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 7 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/section_order-form.scss\A \A 2:   background: url(\"../img/form-bg.svg\");\A 3: }\A 4: \A 5: .form {\A 6:   display: flex;\A 7:   color: $white;\A 8:   font-size: 14px;\A 9: }\A 10: \A 11: .form__column {\A 12:   flex: 1;"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 7 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/section_order-form.scss\A \A 2:   background: url(\"../img/form-bg.svg\");\A 3: }\A 4: \A 5: .form {\A 6:   display: flex;\A 7:   color: $white;\A 8:   font-size: rem(14px);\A 9: \A 10:   @include tablets {\A 11:     flex-direction: column;\A 12:     padding: 0 15%;"; }

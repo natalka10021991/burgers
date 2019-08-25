@@ -13,35 +13,66 @@
 .advantages {
   display: flex;
   text-align: center;
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .advantages__item {
   width: 33%;
   display: flex;
   flex-direction: column;
-  margin-right: 15px;
+  margin-right: rem(15px);
 
   &:last-child {
     margin-right: 0;
   }
+
+  @include phones {
+    flex-direction: row;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: rem(50px);
+  }
 }
 
 .advantages__img {
-  margin-bottom: 30px;
+  margin-bottom: rem(30px);
+
+  @include phones {
+    width: 30%;
+    margin-right: 5%
+  }
+}
+
+.advantages__desc {
+  display: flex;
+  flex-direction: column;
+
+  @include phones {
+    text-align: left;
+    width: 70%;
+  }
 }
 
 .advantages__heading {
   font-family: Lifehack;
-  font-size: 1.5rem;
+  font-size: rem(24px);
   color: $black;
-  margin-bottom: 30px;
+  margin-bottom: rem(30px);
+
+  @include phones {
+    margin-bottom: rem(25px);
+
+  }
 }
 
 .advantages__text {
   opacity: 0.8;
   color: $black;
   font-family: Ubuntu-Light;
-  font-size: 0.875rem;
+  font-size: rem(14px);
   font-weight: 300;
-  line-height: 24.07px;
+  line-height: rem(24px);
 }

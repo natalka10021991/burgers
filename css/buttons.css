@@ -3,12 +3,12 @@ Error: Undefined variable: "$red".
         on line 3 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/buttons.scss
 
 1: .btn {
-2:   padding: 10px 20px;
+2:   padding: rem(10px) rem(20px);
 3:   background-color: $red;
 4:   border: none;
 5:   border-radius: 5px;
 6:   color: $white;
-7:   font-size: 0.8125rem;
+7:   font-size: rem(13px);
 8:   text-transform: uppercase;
 
 Backtrace:
@@ -58,4 +58,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$red\".\A         on line 3 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/buttons.scss\A \A 1: .btn {\A 2:   padding: 10px 20px;\A 3:   background-color: $red;\A 4:   border: none;\A 5:   border-radius: 5px;\A 6:   color: $white;\A 7:   font-size: 0.8125rem;\A 8:   text-transform: uppercase;"; }
+  content: "Error: Undefined variable: \"$red\".\A         on line 3 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/buttons.scss\A \A 1: .btn {\A 2:   padding: rem(10px) rem(20px);\A 3:   background-color: $red;\A 4:   border: none;\A 5:   border-radius: 5px;\A 6:   color: $white;\A 7:   font-size: rem(13px);\A 8:   text-transform: uppercase;"; }

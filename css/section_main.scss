@@ -3,7 +3,8 @@
 }
 
 .container {
-  width: 940px;
+  max-width: 940px;
+  width: 95%;
   height: 100%;
   margin: 0 auto;
   position: relative;
@@ -11,31 +12,67 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: rem(20px) 0;
+
+  &_order-form {
+    justify-content: center;
+  }
 }
 
 .intro-slide {
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  @include tablets {
+    flex-direction: column;
+    padding: 0 10%;
+  }
 }
 
 .intro-slide__left {
-  margin-right: 15px;
+  margin-right: rem(15px);
+
+  @include tablets {
+    margin-right: 0;
+  }
+}
+
+.intro-slide__img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.intro-slide__right {
+
+  @include tablets {
+    text-align: center;
+  }
 }
 
 .heading {
   color: $yellow;
-  font-size: 4.5rem;
+  font-size: rem(72px);
   font-family: Gagalin-Regular;
   line-height: 2;
   margin: 0;
-  margin-top: 30px;
+  margin-top: rem(30px);
+
+  @include tablets {
+    margin-top: 0;
+    line-height: 1;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  @include phones {
+    font-size: rem(63px);
+  }
 }
 
 .heading_black {
   color: $black;
-  margin: 0;
+  margin-top: 0;
 }
 
 .heading_yellow {
@@ -46,19 +83,26 @@
 .heading_white {
   color: $white;
   margin-top: 0;
+  text-align: left;
+  margin-left: rem(30px);
 }
 
 .heading__subheading {
   display: block;
   color: $white;
-  font-size: 4.0625rem;
+  font-size: rem(65px);
   font-family: Lifehack;
   line-height: 0.9;
+
+  @include tablets {
+    font-size: rem(54px);
+    text-align: center;
+  }
 }
 
 .arrow-down {
   display: block;
-  width: 28px;
-  height: 14px;
+  width: rem(28px);
+  height: rem(14px);
   background-image: url("../img/icons/arrow-scroll.svg");
 }

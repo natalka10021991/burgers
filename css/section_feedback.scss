@@ -15,6 +15,12 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  filter: grayscale(1);
+
+  @include tablets {
+    width: 50%;
+    height: 25%;
+  }
 
   &:hover {
     .feedback__back {
@@ -33,22 +39,40 @@
   bottom: 0;
   background-color: rgba(20, 20, 20, 0.7);
   color: $white;
-  padding: 50px 20px;
+  padding: rem(50px) rem(20px);
+
+  @include tablets {
+    text-align: center;
+    padding: rem(30px) rem(10px);
+  }
 }
 
 .feedback__heading {
   font-family: Gagalin-Regular;
-  font-size: 0.875rem;
-  margin-bottom: 30px;
+  font-size: rem(14px);
+  margin-bottom: rem(30px);
+
+  @include tablets {
+    margin-bottom: rem(15px);
+
+  }
+
+  @include phones {
+    font-size: rem(24px);
+  }
 }
 
 .feedback__text {
 
   p {
     font-family: Ubuntu-Light;
-    line-height: 1.5rem;
-    font-size: 0.875rem;
-    margin-bottom: 20px;
+    line-height: rem(24px);
+    font-size: rem(14px);
+    margin-bottom: rem(20px);
+  }
+
+  @include phones {
+    display: none;
   }
 }
 

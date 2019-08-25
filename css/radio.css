@@ -4,11 +4,11 @@ Error: Undefined variable: "$white".
 
 32:   align-items: center;
 33:   justify-content: center;
-34:   width: 15px;
-35:   height: 15px;
+34:   width: rem(15px);
+35:   height: rem(15px);
 36:   border-radius: 50%;
 37:   background-color: $white;
-38:   margin-right: 10px;
+38:   margin-right: rem(10px);
 39: 
 40:   &:after {
 41:     content: '';
@@ -61,4 +61,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 37 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/radio.scss\A \A 32:   align-items: center;\A 33:   justify-content: center;\A 34:   width: 15px;\A 35:   height: 15px;\A 36:   border-radius: 50%;\A 37:   background-color: $white;\A 38:   margin-right: 10px;\A 39: \A 40:   &:after {\A 41:     content: '';\A 42:     display: block;"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 37 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/radio.scss\A \A 32:   align-items: center;\A 33:   justify-content: center;\A 34:   width: rem(15px);\A 35:   height: rem(15px);\A 36:   border-radius: 50%;\A 37:   background-color: $white;\A 38:   margin-right: rem(10px);\A 39: \A 40:   &:after {\A 41:     content: '';\A 42:     display: block;"; }

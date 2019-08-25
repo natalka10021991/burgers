@@ -1,33 +1,37 @@
 .pages-switcher {
   position: fixed;
-  top: 100px;
-  right: 80px;
+  top: rem(100px);
+  right: rem(80px);
   z-index: 1;
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .pages-switcher__item {
-  margin-bottom: 3px;
+  margin-bottom: rem(3px);
 }
 
 .pages-switcher__link {
   display: inline-block;
-  width: 16px;
-  height: 16px;
-  border-radius: 8px;
-  margin-left: 4px;
-  margin-bottom: 5px;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  margin-left: rem(4px);
+  margin-bottom: rem(5px);
   position: relative;
 
   &:after {
     content: "";
     display: block;
-    width: 6px;
-    height: 6px;
-    border-radius: 3px;
+    width: rem(6px);
+    height: rem(6px);
+    border-radius: 50%;
     background-color: $white;
     position: absolute;
-    top: 4px;
-    left: 4px;
+    top: rem(4px);
+    left: rem(4px);
   }
 
   &:hover {
