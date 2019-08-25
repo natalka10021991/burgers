@@ -273,6 +273,10 @@
     .heading {
       font-size: 3.9375rem; } }
 
+@media screen and (max-width: 480px) {
+  .heading_h2 {
+    font-size: 2.25rem; } }
+
 .heading_black {
   color: #2f3234;
   margin-top: 0; }
@@ -333,14 +337,19 @@
       flex-direction: row;
       width: 100%;
       margin-right: 0;
-      margin-bottom: 3.125rem; } }
+      margin-bottom: 1.875rem; }
+      .advantages__item:last-child {
+        margin-bottom: 0; } }
 
 .advantages__img {
   margin-bottom: 1.875rem; }
   @media screen and (max-width: 480px) {
     .advantages__img {
-      width: 30%;
+      width: 25%;
       margin-right: 5%; } }
+
+.advantages__img-icon {
+  max-width: 100%; }
 
 .advantages__desc {
   display: flex;
@@ -348,7 +357,7 @@
   @media screen and (max-width: 480px) {
     .advantages__desc {
       text-align: left;
-      width: 70%; } }
+      width: 75%; } }
 
 .advantages__heading {
   font-family: Lifehack;
@@ -357,7 +366,7 @@
   margin-bottom: 1.875rem; }
   @media screen and (max-width: 480px) {
     .advantages__heading {
-      margin-bottom: 1.5625rem; } }
+      margin-bottom: 0.625rem; } }
 
 .advantages__text {
   opacity: 0.8;
@@ -609,9 +618,12 @@
 .form__block {
   display: block;
   flex: 1;
-  margin-right: 1.25rem; }
-  .form__block:last-child {
-    margin-right: 0; }
+  margin-left: 1.25rem; }
+  .form__block:first-child {
+    margin-left: 0; }
+  @media screen and (max-width: 480px) {
+    .form__block_hidden-on-mobiles {
+      display: none; } }
 
 .form__block-title {
   margin-bottom: 0.4375rem;

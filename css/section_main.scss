@@ -70,6 +70,12 @@
   }
 }
 
+.heading_h2 {
+  @include phones {
+    font-size: rem(36px);
+  }
+}
+
 .heading_black {
   color: $black;
   margin-top: 0;

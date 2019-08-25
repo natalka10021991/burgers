@@ -33,7 +33,11 @@
     flex-direction: row;
     width: 100%;
     margin-right: 0;
-    margin-bottom: rem(50px);
+    margin-bottom: rem(30px);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -41,9 +45,13 @@
   margin-bottom: rem(30px);
 
   @include phones {
-    width: 30%;
+    width: 25%;
     margin-right: 5%
   }
+}
+
+.advantages__img-icon {
+  max-width: 100%;
 }
 
 .advantages__desc {
@@ -52,7 +60,7 @@
 
   @include phones {
     text-align: left;
-    width: 70%;
+    width: 75%;
   }
 }
 
@@ -63,7 +71,7 @@
   margin-bottom: rem(30px);
 
   @include phones {
-    margin-bottom: rem(25px);
+    margin-bottom: rem(10px);
 
   }
 }
