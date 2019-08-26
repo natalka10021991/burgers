@@ -451,8 +451,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 10%;
-  background-color: #2f3234;
-  opacity: 0.93; }
+  background-color: rgba(47, 50, 52, 0.9); }
   @media screen and (max-width: 768px) {
     .team {
       width: 100%;
@@ -498,6 +497,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  flex: 0 0 auto;
   width: 6.25rem;
   height: 6.25rem;
   border-radius: 50%;
@@ -574,7 +574,7 @@
 
 .menu__elem-desc {
   overflow: hidden;
-  background-color: #2f3234;
+  background-color: rgba(47, 50, 52, 0.5);
   opacity: 0.5;
   font-size: 0.875rem;
   font-family: 'Ubuntu-Light';

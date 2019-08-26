@@ -12,8 +12,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 10%;
-  background-color: #2f3234;
-  opacity: 0.93;
+  background-color: rgba(47, 50, 52, 0.9);
 
   @include tablets {
     width: 100%;
@@ -77,6 +76,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  flex: 0 0 auto;
   width: rem(100px);
   height: rem(100px);
   border-radius: 50%;
