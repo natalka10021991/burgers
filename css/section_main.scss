@@ -61,6 +61,8 @@
   line-height: 2;
   margin: 0;
   margin-top: rem(30px);
+  line-height: initial;
+
 
   @include tablets {
     margin-top: 0;
@@ -94,7 +96,10 @@
   color: $white;
   margin-top: 0;
   text-align: left;
-  margin-left: rem(30px);
+}
+
+.heading_center {
+  text-align: center;
 }
 
 .heading__subheading {
