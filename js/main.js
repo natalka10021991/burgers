@@ -16,3 +16,28 @@ closeButton.addEventListener('click' , function (e) {
 });
 
 
+const teamAccordionButton = document.querySelectorAll('.team__item');
+const menuAccordionButton = document.querySelectorAll('.menu__item');
+
+function accordeon(button) {
+    for (var i = 0; i < button.length; i++) {
+        button[i].addEventListener('click', function(e) {
+            e.preventDefault();
+
+            for (var i = 0; i < button.length; i++) {
+                if (button[i].classList.contains('active')) {
+                    button[i].classList.remove('active');
+                }
+            }
+
+            this.classList.add('active');
+
+        });
+    };
+};
+
+accordeon(teamAccordionButton);
+
+accordeon(menuAccordionButton);
+
+

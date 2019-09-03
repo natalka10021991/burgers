@@ -24,7 +24,7 @@
 .menu__item {
   display: flex;
 
-  &_active {
+  &.active {
     .menu__elem-desc {
       max-width: rem(500px);
 

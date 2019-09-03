@@ -25,10 +25,12 @@
   font-size: rem(14px);
   margin-bottom: rem(35px);
 
-  &_active {
+  &.active {
 
     .team__person-info {
       height: auto;
+      opacity: 1;
+      transition: bottom 1s ease-out 0.5s;
     }
 
     .team__person-name {
@@ -61,8 +63,10 @@
 .team__person-info {
   display: flex;
   height: 0;
+  opacity: 0;
   overflow: hidden;
   margin-left: rem(20px);
+  transition: bottom 1s ease-out 0.5s;
 
   @include tablets {
     display: flex;

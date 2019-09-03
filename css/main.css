@@ -647,12 +647,14 @@
   color: #fff;
   font-size: 0.875rem;
   margin-bottom: 2.1875rem; }
-  .team__item_active .team__person-info {
-    height: auto; }
-  .team__item_active .team__person-name {
+  .team__item.active .team__person-info {
+    height: auto;
+    opacity: 1;
+    transition: bottom 1s ease-out 0.5s; }
+  .team__item.active .team__person-name {
     color: #f9b43b;
     margin-bottom: 1rem; }
-    .team__item_active .team__person-name:before {
+    .team__item.active .team__person-name:before {
       background: url("../img/icons/arrow-up.svg") center center no-repeat; }
 
 .team__person-name {
@@ -670,8 +672,10 @@
 .team__person-info {
   display: flex;
   height: 0;
+  opacity: 0;
   overflow: hidden;
-  margin-left: 1.25rem; }
+  margin-left: 1.25rem;
+  transition: bottom 1s ease-out 0.5s; }
   @media screen and (max-width: 768px) {
     .team__person-info {
       display: flex;
@@ -729,10 +733,10 @@
 
 .menu__item {
   display: flex; }
-  .menu__item_active .menu__elem-desc {
+  .menu__item.active .menu__elem-desc {
     max-width: 31.25rem; }
     @media screen and (max-width: 768px) {
-      .menu__item_active .menu__elem-desc {
+      .menu__item.active .menu__elem-desc {
         width: 18.75rem; } }
 
 .menu__elem-btn {
