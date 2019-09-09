@@ -31,9 +31,13 @@
       @include tablets {
         width: rem(300px);
       }
+
+      @include phones {
+        width: calc(100vw - 210px);
+        overflow: scroll;
+      }
     }
   }
-
 }
 
 .menu__elem-btn {
@@ -71,7 +75,7 @@
   font-family: 'Ubuntu-Light';
   line-height: 24px;
   max-width: 0;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .menu__elem-text {

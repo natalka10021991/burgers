@@ -76,4 +76,52 @@
   }
 }
 
+.overlay-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(#2f3234, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: relative;
+}
+
+.overlay__btn-close {
+  width: 15px;
+  height: 15px;
+  background: url("../img/icons/close.svg") center center no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+}
+
+.overlay__content {
+  background: $white;
+  font-size: rem(14px);
+  border-radius: 5px;
+  max-width: 400px;
+  padding: 20px;
+  color: #2f3234;
+
+  h3 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-family: Gagalin-Regular;
+  }
+
+  p {
+    font-weight: 300;
+    line-height: 24px;
+  }
+}
+
+
+
 

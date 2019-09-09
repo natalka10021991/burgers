@@ -38,3 +38,6 @@ a {
   position: relative;
   width: 100%;
   overflow: hidden; }
+
+.hidden {
+  overflow: hidden; }
