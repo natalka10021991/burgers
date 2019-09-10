@@ -36,15 +36,14 @@ sliderButtonRight.addEventListener('click', function(e) {
 
 
 
-const myForm = document.querySelector('#myForm');
-const formButton = document.querySelector('#formButton');
+var myForm = document.querySelector("#form");
+var send = document.querySelector("#send");
 
-formButton.addEventListener('click', event => {
+send.addEventListener('click', event => {
     event.preventDefault();
 
     if (validateForm(myForm)) {
-        const data = {
-            let data = new FormData(myForm);
+        let data = new FormData(myForm);
         data.append('name', myForm.elements.name.value);
         data.append('phone', myForm.elements.phone.value);
         data.append("comment", myForm.elements.desc.value);
@@ -52,40 +51,60 @@ formButton.addEventListener('click', event => {
         // проверка содержимого data
 //         for (var pair of data.entries()) {
 //     console.log(pair[0]+ ', ' + pair[1]);
-        }
-
+// }
         const xhr = new XMLHttpRequest();
         xhr.responseType = 'json';
         xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
         xhr.send(data);
         xhr.addEventListener('load', () => {
-            console.log(xhr.response);
+            if (xhr.response.status === 1) {
+                console.log('Получилось!!!');
+                console.log(xhr.response);
+                //popup-message
+                $(".status-popup").addClass("active");
+                document.querySelector('body').onwheel = e => e.stopPropagation();
+                $('.status-popup__close').on("click", function (e) {
+                    e.preventDefault();
+                    $(".status-popup").removeClass("active");
+                    document.querySelector('body').onwheel = e => e.preventDefault();
+                });
+            } else {
+                console.log('Не получилось...');
+                console.log(xhr.response);
+                document.querySelector('body').onwheel = e => e.stopPropagation();
+                $(".status-popup-err").addClass("active");
+                $('.status-popup__close').on("click", function (e) {
+                    e.preventDefault();
+                    $(".status-popup-err").removeClass("active");
+
+                });
+                document.querySelector('body').onwheel = e => e.preventDefault();
+            }
+
         })
     }
-});
 
-
-function validateForm(form) {
-    let valid = true;
-
-    if(!validateField(form.elements.name)) {
-        valid = false;
+    function validateForm(form) {
+        let valide = true;
+        if (!validateField(form.elements.name)) {
+            valide = false;
+        }
+        if (!validateField(form.elements.phone)) {
+            valide = false;
+        }
+        return valide;
     }
-
-    if(!validateField(form.elements.phone)) {
-        valid = false;
+    function validateField(field) {
+        field.nextElementSibling.textContent = field.validationMessage;
+        if (document.getElementById('desc').value == '') {
+            form.elements.desc.nextElementSibling.textContent = 'Заполните это поле Please fill in this field.';
+            valide = false;
+        } else {
+            form.elements.desc.nextElementSibling.textContent = '';
+        }
+        return field.checkValidity();
     }
-
-    if(!validateField(form.elements.comment)) {
-        valid = false;
-    }
-    return valid;
-}
-
-function validateField(field) {
-    field.nextElementSibling.textContent = field.validationMessage;
-    return field.checkValidity();
-}
+})
 
 
 
