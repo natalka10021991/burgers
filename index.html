@@ -8,6 +8,8 @@
     <title>Main page</title>
     <link rel='stylesheet' href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=<403a82a3-1963-4c02-ad41-637d69e7a6d4>&lang=ru_RU" type="text/javascript">
+    </script>
 </head>
 <body>
     <div class="main-wrapper">
@@ -753,7 +755,7 @@
                     </form>
                 </div>
             </section>
-        <section class="section section_contacts">
+        <section id="map" class="section section_contacts">
             <footer class="footer">
                 <div class="container container_footer">
                     <div class="contacts">
@@ -844,12 +846,12 @@
                 </li>
             </ul>
         </div>
-        <scritp type="template" id="overlayTemplate">
+        <script type="template" id="overlayTemplate">
             <div class="overlay">
                 <a href="#" class="overlay__btn-close"></a>
                 <div class="overlay__content"></div>
             </div>
-        </scritp>
+        </script>
 
     </div>
     <script src="js/main.js"></script>

@@ -30,7 +30,11 @@ sliderButtonLeft.addEventListener('click', function(e) {
 sliderButtonRight.addEventListener('click', function(e) {
     e.preventDefault();
     sliderList.appendChild(sliderList.firstElementChild);
-})
+});
+
+
+
+
 
 const myForm = document.querySelector('#myForm');
 const formButton = document.querySelector('#formButton');
@@ -40,15 +44,20 @@ formButton.addEventListener('click', event => {
 
     if (validateForm(myForm)) {
         const data = {
-            name: myForm.elements.name.value,
-            phone: myForm.elements.phone.value,
-            comment: myForm.elements.comment.value
+            let data = new FormData(myForm);
+        data.append('name', myForm.elements.name.value);
+        data.append('phone', myForm.elements.phone.value);
+        data.append("comment", myForm.elements.desc.value);
+        data.append("to", "frodo@gmail.com");
+        // проверка содержимого data
+//         for (var pair of data.entries()) {
+//     console.log(pair[0]+ ', ' + pair[1]);
         }
 
         const xhr = new XMLHttpRequest();
         xhr.responseType = 'json';
         xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
-        xhr.send(JSON.stringify(data));
+        xhr.send(data);
         xhr.addEventListener('load', () => {
             console.log(xhr.response);
         })
@@ -139,10 +148,60 @@ function openOverlay(content) {
     contentElement.innerHTML = content;
 
     return overlayElement;
-
-
-
 }
+
+// MAP
+
+ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+            center: [59.939095, 30.315868],
+            zoom: 11
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+
+        // Создаём макет содержимого.
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: 'Бургерная 1',
+            balloonContent: 'Бургерная 1'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'img/icons/map-marker.svg',
+            // Размеры метки.
+            iconImageSize: [30, 42],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-5, -38]
+        }),
+
+        myPlacemark2 = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: 'Бургерная 2',
+            balloonContent: 'Бургерная 2'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'img/icons/map-marker.svg',
+            // Размеры метки.
+            iconImageSize: [30, 42],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-40, -100]
+        });
+
+    myMap.geoObjects
+        .add(myPlacemark)
+        .add(myPlacemark2);
+    myMap.behaviors.disable('scrollZoom');
+});
 
 function filter(input, than) {
     let newArray = [];
