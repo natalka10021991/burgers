@@ -11,6 +11,12 @@
 
 .pages-switcher__item {
   margin-bottom: rem(3px);
+
+  &.active {
+    .pages-switcher__link {
+      border: 1px solid $white;
+    }
+  }
 }
 
 .pages-switcher__link {
@@ -35,13 +41,6 @@
   }
 
   &:hover {
-    border: 1px solid $white;
-  }
-}
-
-.pages-switcher__item_active {
-
-  .pages-switcher__link {
     border: 1px solid $white;
   }
 }

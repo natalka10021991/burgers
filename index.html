@@ -13,12 +13,12 @@
 </head>
 <body>
     <div class="main-wrapper">
-        <div class="secondary-wrapper">
-            <section class="section section_main">
+        <div id="fullpage" class="secondary-wrapper">
+            <section class="section section_main" data-anchor="main">
                 <div class="container">
                     <header class="header">
                         <div class="header__left">
-                            <a href="#" class="logo">
+                            <a href="index.html" class="logo">
                                 <img src="img/icons/logo.svg" alt="Логотип" class="logo__img">
                             </a>
                         </div>
@@ -26,29 +26,29 @@
                             <nav class="nav">
                                 <ul class="nav__list">
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link">О нас</a>
+                                        <a href="#about" class="nav__link">О нас</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link">Бургеры</a>
+                                        <a href="#slider" class="nav__link">Бургеры</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link">Команда</a>
+                                        <a href="#team" class="nav__link">Команда</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link">Меню</a>
+                                        <a href="#menu" class="nav__link">Меню</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link">Отзывы</a>
+                                        <a href="#feedback-anchor" class="nav__link">Отзывы</a>
                                     </li>
                                     <li class="nav__item">
                                         <a href="#" class="nav__link">Как мы работаем</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link">Контакты</a>
+                                        <a href="#contacts" class="nav__link">Контакты</a>
                                     </li>
                                 </ul>
                             </nav>
-                            <a href="#" class="btn btn_header">Заказать</a>
+                            <a href="#order-form" class="btn btn_header">Заказать</a>
                             <a href="#" id="mobile-menu-btn" class="mobile-menu-btn"></a>
                         </div>
                     </header>
@@ -63,10 +63,10 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="arrow-down"></a>
+                    <a href="#about" class="arrow-down"></a>
                 </div>
             </section>
-            <section class="section section_about">
+            <section class="section section_about" data-anchor="about">
                 <div class="container about__container">
                     <h2 class="heading heading_h2 heading_black">
                         Мы лучшие
@@ -116,7 +116,7 @@
                 </div>
             </section>
 
-            <section class="section section_slider">
+            <section class="section section_slider" data-anchor="slider">
                 <div class="container container_slider">
                     <div class="slider">
                         <a href="#" id="slider-btn-left" class="slider__btn slider__btn_left"></a>
@@ -441,7 +441,7 @@
                 </div>
             </section>
 
-            <section class="section section_team">
+            <section class="section section_team" data-anchor="team">
                 <div class="team">
                     <h2 class="heading heading_h2 heading_yellow">
                         Команда
@@ -510,7 +510,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="section section_menu">
+            <section class="section section_menu" data-anchor="menu">
                 <div class="container container_menu">
                     <h2 class="heading heading_h2 heading_white">Меню</h2>
                     <div class="menu">
@@ -553,9 +553,9 @@
                 </div>
 
             </section>
-            <section class="section section_feedback">
+            <section class="section section_feedback" data-anchor="feedback-anchor">
                 <ul class="feedback">
-                    <li class="feedback__item" style='background-image: url(img/feedback/photo1.png)'>
+                    <li class="feedback__item" style='background-image: url("img/feedback/photo1.png")'>
                         <div class="feedback__back">
                             <h3 class="feedback__heading">Константин Спилберг</h3>
                             <div class="feedback__text">
@@ -566,7 +566,7 @@
                             <a href="#" class="btn btn_black open">Подробнее</a>
                         </div>
                     </li>
-                    <li class="feedback__item" style='background-image: url(img/feedback/photo2.png)'>
+                    <li class="feedback__item" style='background-image: url("img/feedback/photo2.png")'>
                         <div class="feedback__back">
                             <h3 class="feedback__heading">Константин Спилберг</h3>
                             <div class="feedback__text">
@@ -577,7 +577,7 @@
                             <a href="#" class="btn btn_black open">Подробнее</a>
                         </div>
                     </li>
-                    <li class="feedback__item" style='background-image: url(img/feedback/photo3.png)'>
+                    <li class="feedback__item" style='background-image: url("img/feedback/photo3.png")'>
                         <div class="feedback__back">
                             <h3 class="feedback__heading">Константин Спилберг</h3>
                             <div class="feedback__text">
@@ -588,7 +588,7 @@
                             <a href="#" class="btn btn_black open">Подробнее</a>
                         </div>
                     </li>
-                    <li class="feedback__item" style='background-image: url(img/feedback/photo4.png)'>
+                    <li class="feedback__item" style='background-image: url("img/feedback/photo4.png")'>
                         <div class="feedback__back">
                             <h3 class="feedback__heading">Константин Спилберг</h3>
                             <div class="feedback__text">
@@ -599,7 +599,7 @@
                             <a href="#" class="btn btn_black open">Подробнее</a>
                         </div>
                     </li>
-                    <li class="feedback__item" style='background-image: url(img/feedback/photo5.png)'>
+                    <li class="feedback__item" style='background-image: url("img/feedback/photo5.png")'>
                         <div class="feedback__back">
                             <h3 class="feedback__heading">Константин Спилберг</h3>
                             <div class="feedback__text">
@@ -610,7 +610,7 @@
                             <a href="#" class="btn btn_black open">Подробнее</a>
                         </div>
                     </li>
-                    <li class="feedback__item" style='background-image: url(img/feedback/photo6.png)'>
+                    <li class="feedback__item" style='background-image: url("img/feedback/photo6.png")'>
                         <div class="feedback__back">
                             <h3 class="feedback__heading">Константин Спилберг</h3>
                             <div class="feedback__text">
@@ -621,7 +621,7 @@
                             <a href="#" class="btn btn_black open">Подробнее</a>
                         </div>
                     </li>
-                    <li class="feedback__item" style='background-image: url(img/feedback/photo7.png)'>
+                    <li class="feedback__item" style='background-image: url("img/feedback/photo7.png")'>
                         <div class="feedback__back">
                             <h3 class="feedback__heading">Константин Спилберг</h3>
                             <div class="feedback__text">
@@ -632,7 +632,7 @@
                             <a href="#" class="btn btn_black open">Подробнее</a>
                         </div>
                     </li>
-                    <li class="feedback__item" style='background-image: url(img/feedback/photo8.png)'>
+                    <li class="feedback__item" style='background-image: url("img/feedback/photo8.png")'>
                         <div class="feedback__back">
                             <h3 class="feedback__heading">Константин Спилберг</h3>
                             <div class="feedback__text">
@@ -646,7 +646,7 @@
                 </ul>
             </section>
 
-            <section class="section section_order-form">
+            <section class="section section_order-form" data-anchor="order-form">
                 <div class="container container_order-form">
                     <h2 class="heading heading_h2 heading_yellow">
                         Закажите доставку
@@ -755,7 +755,7 @@
                     </form>
                 </div>
             </section>
-        <section id="map" class="section section_contacts">
+        <section id="map" class="section section_contacts" data-anchor="contacts">
             <footer class="footer">
                 <div class="container container_footer">
                     <div class="contacts">
@@ -816,33 +816,30 @@
             </div>
         </div>
         <div class="pages-switcher">
-            <ul class="pages-switcher__list">
-                <li class="pages-switcher__item pages-switcher__item_active">
-                    <a href="#" class="pages-switcher__link"></a>
+            <ul id="myMenu" class="pages-switcher__list">
+                <li class="pages-switcher__item active" data-menuanchor="main" >
+                    <a href="#main" class="pages-switcher__link"></a>
                 </li>
-                <li class="pages-switcher__item">
-                    <a href="#" class="pages-switcher__link"></a>
+                <li class="pages-switcher__item" data-menuanchor="about" >
+                    <a href="#about" class="pages-switcher__link"></a>
                 </li>
-                <li class="pages-switcher__item">
-                    <a href="#" class="pages-switcher__link"></a>
+                <li class="pages-switcher__item" data-menuanchor="slider" >
+                    <a href="#slider" class="pages-switcher__link"></a>
                 </li>
-                <li class="pages-switcher__item">
-                    <a href="#" class="pages-switcher__link"></a>
+                <li class="pages-switcher__item" data-menuanchor="team" >
+                    <a href="#team" class="pages-switcher__link"></a>
                 </li>
-                <li class="pages-switcher__item">
-                    <a href="#" class="pages-switcher__link"></a>
+                <li class="pages-switcher__item" data-menuanchor="menu" >
+                    <a href="#menu" class="pages-switcher__link"></a>
                 </li>
-                <li class="pages-switcher__item">
-                    <a href="#" class="pages-switcher__link"></a>
+                <li class="pages-switcher__item" data-menuanchor="feedback-anchor" >
+                    <a href="#feedback-anchor" class="pages-switcher__link"></a>
                 </li>
-                <li class="pages-switcher__item">
-                    <a href="#" class="pages-switcher__link"></a>
+                <li class="pages-switcher__item" data-menuanchor="order-form" >
+                    <a href="#order-form" class="pages-switcher__link"></a>
                 </li>
-                <li class="pages-switcher__item">
-                    <a href="#" class="pages-switcher__link"></a>
-                </li>
-                <li class="pages-switcher__item">
-                    <a href="#" class="pages-switcher__link"></a>
+                <li class="pages-switcher__item" data-menuanchor="contacts" >
+                    <a href="#contacts" class="pages-switcher__link"></a>
                 </li>
             </ul>
         </div>
@@ -854,6 +851,8 @@
         </script>
 
     </div>
+    <script type="text/javascript" src="js/fullpage.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 </html>

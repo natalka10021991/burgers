@@ -136,6 +136,8 @@
 
 .pages-switcher__item {
   margin-bottom: 0.1875rem; }
+  .pages-switcher__item.active .pages-switcher__link {
+    border: 1px solid #fff; }
 
 .pages-switcher__link {
   display: inline-block;
@@ -157,9 +159,6 @@
     left: 0.25rem; }
   .pages-switcher__link:hover {
     border: 1px solid #fff; }
-
-.pages-switcher__item_active .pages-switcher__link {
-  border: 1px solid #fff; }
 
 .header {
   width: 100%;

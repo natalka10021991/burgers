@@ -210,6 +210,15 @@ ymaps.ready(function () {
     myMap.behaviors.disable('scrollZoom');
 });
 
+
+
+// Full page
+
+new fullpage('#fullpage', {
+    menu: '#myMenu'
+});
+
+
 function filter(input, than) {
     let newArray = [];
 
