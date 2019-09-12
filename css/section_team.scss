@@ -29,6 +29,7 @@
 
     .team__person-info {
       max-height: 500px;
+      height: auto;
       opacity: 1;
     }
 
@@ -65,7 +66,7 @@
   opacity: 0;
   overflow: hidden;
   margin-left: rem(20px);
-  transition: transform 0.5s;
+  transition: max-height 0.5s;
 
   @include tablets {
     display: flex;

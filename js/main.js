@@ -18,6 +18,7 @@ closeButton.addEventListener('click' , function (e) {
 });
 
 
+/*
 const sliderButtonLeft = document.querySelector('#slider-btn-left');
 const sliderButtonRight = document.querySelector('#slider-btn-right');
 const sliderList = document.querySelector('.slider__list');
@@ -32,12 +33,15 @@ sliderButtonRight.addEventListener('click', function(e) {
     sliderList.appendChild(sliderList.firstElementChild);
 });
 
-
+*/
 
 
 
 const myForm = document.querySelector('#myForm');
 const send = document.querySelector('#send');
+const successSend = openOverlay("<div>Данные отправлены!</div>")
+const failedSend = openOverlay("<div class='error'>Упс! Что-то пошло не так!</div>")
+
 
 send.addEventListener('click', event => {
     event.preventDefault();
@@ -48,7 +52,7 @@ send.addEventListener('click', event => {
         data.append('name', myForm.elements.name.value);
         data.append('phone', myForm.elements.phone.value);
         data.append("comment", myForm.elements.desc.value);
-        data.append("to", "frodo@gmail.com");
+        data.append("to", "n.a.bystrova@gmail.com");
         // проверка содержимого data
 //         for (var pair of data.entries()) {
 //     console.log(pair[0]+ ', ' + pair[1]);
@@ -62,10 +66,13 @@ send.addEventListener('click', event => {
             if (xhr.response.status === 1) {
                 console.log('Получилось!!!');
                 console.log(xhr.response);
+                document.body.appendChild(successSend);
+
 
             } else {
                 console.log('Не получилось...');
                 console.log(xhr.response);
+                document.body.appendChild(failedSend);
             }
         })
     }
@@ -98,31 +105,27 @@ function validateField(field) {
 
 // Accordeon
 
-const accordeonTeam = document.querySelector('#accordeonTeam');
-const clickTeam = document.querySelector('.team__person-name')
-const clickTeamClass = clickTeam.className;
-const accordeonMenu = document.querySelector('#accordeonMenu');
-const clickMenu = document.querySelector('.menu__elem-btn')
-const clickMenuClass = clickMenu.className;
+const teamButton = $('.team__item');
+const menuButton = $('.menu__item');
 
-function accordeon(element, title) {
-    let lastActive;
+accordeon(teamButton);
+accordeon(menuButton);
 
-    element.addEventListener('click', function(e) {
+function accordeon(button) {
+    button.on('click', function(e) {
         e.preventDefault();
-        if(e.target.classList.contains(title)) {
-            if(lastActive) {
-                lastActive.classList.remove('active');
-            }
+        button.not($(this)).removeClass('active');
 
-            lastActive = e.target.parentNode;
-            lastActive.classList.add("active");
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+        } else {
+            $(this).addClass('active');
         }
     })
 }
 
-accordeon(accordeonTeam, clickTeamClass);
-accordeon(accordeonMenu, clickMenuClass);
+
+
 
 // Overlay
 
@@ -212,12 +215,13 @@ ymaps.ready(function () {
 
 
 
-// Full page
+$(document).ready(function(){
+    $('.slider__list').slick({
+        prevArrow: $('#slider-btn-left'),
+        nextArrow: $('#slider-btn-right')
 
-new fullpage('#fullpage', {
-    menu: '#myMenu'
+    });
 });
-
 
 function filter(input, than) {
     let newArray = [];

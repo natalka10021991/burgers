@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 20 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/section_feedback.scss, in `tablets'
-        from line 20 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/section_feedback.scss
+        on line 25 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/section_feedback.scss, in `tablets'
+        from line 25 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/section_feedback.scss
 
-15:   background-position: center;
-16:   background-repeat: no-repeat;
-17:   background-size: cover;
-18:   filter: grayscale(1);
-19: 
-20:   @include tablets {
-21:     width: 50%;
-22:     height: 25%;
-23:   }
+20:   background-position: center;
+21:   background-repeat: no-repeat;
+22:   background-size: cover;
+23:   filter: grayscale(1);
 24: 
-25:   &:hover {
+25:   @include tablets {
+26:     width: 50%;
+27:     height: 25%;
+28:   }
+29: 
+30:   &:hover {
 
 Backtrace:
-/Users/shishkin/Desktop/loftschool/burgers/prod/css/section_feedback.scss:20:in `tablets'
-/Users/shishkin/Desktop/loftschool/burgers/prod/css/section_feedback.scss:20
+/Users/shishkin/Desktop/loftschool/burgers/prod/css/section_feedback.scss:25:in `tablets'
+/Users/shishkin/Desktop/loftschool/burgers/prod/css/section_feedback.scss:25
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -65,4 +65,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 20 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/section_feedback.scss, in `tablets'\A         from line 20 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/section_feedback.scss\A \A 15:   background-position: center;\A 16:   background-repeat: no-repeat;\A 17:   background-size: cover;\A 18:   filter: grayscale(1);\A 19: \A 20:   @include tablets {\A 21:     width: 50%;\A 22:     height: 25%;\A 23:   }\A 24: \A 25:   &:hover {"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 25 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/section_feedback.scss, in `tablets'\A         from line 25 of /Users/shishkin/Desktop/loftschool/burgers/prod/css/section_feedback.scss\A \A 20:   background-position: center;\A 21:   background-repeat: no-repeat;\A 22:   background-size: cover;\A 23:   filter: grayscale(1);\A 24: \A 25:   @include tablets {\A 26:     width: 50%;\A 27:     height: 25%;\A 28:   }\A 29: \A 30:   &:hover {"; }

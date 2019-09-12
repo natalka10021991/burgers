@@ -17,6 +17,11 @@
 
 .slider {
   position: relative;
+  width: 100%;
+
+  @include phones {
+    width: 95%;
+  }
 }
 
 .slider__list{
@@ -27,7 +32,8 @@
 }
 
 .slider__item {
-  display: flex;
+  position: relative;
+  display: flex!important;
   flex-direction: row;
   align-items: center;
   flex: 0 0 100%;
@@ -50,7 +56,7 @@
   top: calc(50% - 14px);
 
   &_left {
-    left: rem(-20px);
+    left: rem(-40px);
     transform: rotate(90deg);
 
     @include tablets {
@@ -58,12 +64,12 @@
     }
 
     @include phones {
-      left: 0;
+      left: rem(-14px);
     }
   }
 
   &_right {
-    right: rem(-20px);
+    right: rem(-40px);
     transform: rotate(-90deg);
 
     @include tablets {
@@ -71,12 +77,13 @@
     }
 
     @include phones {
-      right: 0;
+      right: rem(-14px);
     }
   }
 }
 
 .slider__img {
+  margin: 40px;
   width: 50%;
   height: rem(300px);
   background-size: contain;
@@ -88,7 +95,8 @@
   }
 
   @include phones {
-    width: 90%;
+    width: 80%;
+    margin-bottom: 0;
   }
 }
 
@@ -109,6 +117,11 @@
   font-size: rem(14px);
   color: $white;
   line-height: rem(24px);
+
+  @include phones {
+    font-size: rem(12px);
+
+  }
 }
 
 .slider__info {
@@ -129,6 +142,11 @@
 .price__value {
   font-size: rem(72px);
   letter-spacing: -1.79px;
+
+  @include phones {
+    font-size: rem(50px);
+
+  }
 }
 
 .price__rubles {
@@ -138,11 +156,13 @@
 
 .ingredients {
   position: absolute;
-  top: rem(-60px);
-  left: rem(30px);
+  top: 0;
+  left: 0;
 
   @include tablets {
     left: rem(70px);
+    top: rem(10px);
+
   }
 
   @include phones {
@@ -210,8 +230,8 @@
 
 .slider__kkal {
   position: absolute;
-  bottom: -30px;
-  left: 30px;
+  bottom: 0;
+  left: 0;
   width: 60px;
   height: 75px;
   background-size: contain;
@@ -227,7 +247,7 @@
   padding-top: 15px;
 
   @include tablets {
-    top: rem(-60px);
+    top: rem(10px);
     left: 75%;
   }
 
