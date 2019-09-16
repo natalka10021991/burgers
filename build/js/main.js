@@ -1,6 +1,7 @@
 const mobileMenuButton = document.querySelector('#mobile-menu-btn');
 const mobileMenu = document.querySelector('#mobile-menu');
 const closeButton = document.querySelector('#close-button');
+const mobileNavLink = $('.mobile-nav__link');
 
 mobileMenuButton.addEventListener('click' , function (e) {
     e.preventDefault();
@@ -14,8 +15,16 @@ closeButton.addEventListener('click' , function (e) {
 
     mobileMenu.classList.remove("mobile-menu_opened");
     document.body.classList.remove('hidden');
-
 });
+
+closeMobileMenu(mobileNavLink);
+
+function closeMobileMenu(link) {
+    link.on('click', function(e) {
+        mobileMenu.classList.remove("mobile-menu_opened");
+        document.body.classList.remove('hidden');
+    })
+}
 
 
 /*
