@@ -183,7 +183,7 @@ ymaps.ready(function () {
             // Необходимо указать данный тип макета.
             iconLayout: 'default#image',
             // Своё изображение иконки метки.
-            iconImageHref: 'img/map-marker.svg',
+            iconImageHref: '../img/map-marker.svg',
             // Размеры метки.
             iconImageSize: [30, 42],
             // Смещение левого верхнего угла иконки относительно
@@ -199,7 +199,7 @@ ymaps.ready(function () {
             // Необходимо указать данный тип макета.
             iconLayout: 'default#image',
             // Своё изображение иконки метки.
-            iconImageHref: 'img/map-marker.svg',
+            iconImageHref: '../img/map-marker.svg',
             // Размеры метки.
             iconImageSize: [30, 42],
             // Смещение левого верхнего угла иконки относительно
@@ -223,37 +223,6 @@ $(document).ready(function(){
     });
 });
 
-function filter(input, than) {
-    let newArray = [];
-
-    try {
-        if (input.length === 0) {
-            throw new Error('Array is empty')
-        }
-
-        for (var i=0; i<input.length; i++) {
-
-            if (input[i] < than && input[i] > 0)  {
-                throw new Error('less')
-            } else if (!Number.isInteger(input[i])) {
-                throw new Error('Not integer')
-
-            } else if (input[i] < 0) {
-                throw new Error('меньше нуля')
-
-            } else {
-                newArray.push(input[i]);
-
-            }
-        }
-
-        return newArray;
-
-    } catch (e) {
-        console.log(e.message);
-    }
-
-}
 
 var array = [61, 200.2, 300];
 var result = filter(array, 60);
